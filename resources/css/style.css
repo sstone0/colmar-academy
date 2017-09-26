@@ -1,0 +1,531 @@
+/* Universal Styles */
+
+html {
+  font-size: 16px;
+}
+
+.grey {
+  background-color: #D8D8D8;
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 1.75rem;
+  color: #4a4a4a;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: #4A4A4A;
+}
+
+h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  color: #4A4A4A;
+  font-size: 1.25rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
+@media only screen and (max-width: 999px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+  h2 {
+    font-size: 1.25rem;
+  }
+  h3 {
+    font-size: 1rem;
+  }
+  p {
+    font-size: .75rem;
+    font-weight: 300;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  h1 {
+    font-weight: 700;
+    font-size: 1.75rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+  h3 {
+    font-weight: 700;
+    font-size: 1.25rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+}
+
+.main-content {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+.image-container {
+  overflow: hidden;
+}
+
+.image-container img {
+  width: 100%;
+}
+
+.video-container {
+  overflow: hidden;
+}
+
+.video-container video {
+  width: 100%;
+}
+
+
+/* Header Styles */
+
+header {
+  width: 100%;
+  height: 4rem;
+}
+
+header .content {
+  height: 2rem;
+  padding: 1rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+header .content .logo-title {
+  display: flex;
+  align-items: center;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 500;
+}
+
+header .content .logo-title span {
+  color: #9B9B9B;
+  font-weight: 300;
+}
+
+header nav ul {
+  display: flex;
+}
+
+header nav ul li {
+  margin-left: 1rem;
+}
+
+.mobile {
+  display: none;
+}
+
+a {
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
+  color: #4A4A4A;
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+@media only screen and (max-width: 999px) {
+  header .content .logo-title p {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  header .content .logo-title span {
+    font-weight: 300;
+  }
+  header .desktop ul li {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  header .content .logo-title {
+    display: none;
+  }
+  header .desktop {
+    display: none;
+  }
+  header .mobile {
+    display: block;
+    width: 100%;
+  }
+  header .mobile ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  header .mobile li {
+    padding: 0;
+  }
+}
+
+
+/* Banner Styles */
+
+#banner .container {
+  display: flex;
+  width: 1200px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+#banner .image-container {
+  width: 60%;
+  padding: 2rem 1.5rem;
+}
+
+#banner .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 1.5rem;
+}
+
+#banner .content h1 {
+  padding-bottom: 1.5rem;
+}
+
+#banner .content h4 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 100;
+  padding-bottom: 1.5rem;
+}
+
+#banner .content button {
+  color: white;
+  background-color: #4a4a4a;
+  width: 20rem;
+  max-width: 100%;
+  padding: 0.5rem 0;
+  font-size: .75rem;
+}
+
+@media only screen and (max-width: 750px) {
+  #banner .container {
+    flex-direction: column;
+  }
+  #banner .image-container {
+    width: 100%;
+    max-height: 25rem;
+    padding: 0;
+  }
+  #banner .content {
+    padding: 2rem 0 2rem 1rem;
+  }
+  #banner .content h1 {
+    padding-bottom: 2rem;
+  }
+  #banner .content button {
+    margin: 0 auto;
+  }
+}
+
+
+/* Information Styles */
+
+#information {
+  width: 100%;
+}
+
+#information .container {
+  display: flex;
+  width: 1200px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+#information .left-column {
+  width: 60%;
+  padding: 2rem 1.5rem;
+}
+
+#information .image-container {
+  width: 100%;
+}
+
+#information .left-column .content {
+  padding-top: 2rem;
+}
+
+#information .left-column .content p {
+  padding: 1.5rem 0;
+  font-size: .9rem;
+}
+
+#information .left-column .content span {
+  font-size: 0.75rem;
+}
+
+#information .right-column {
+  width: 40%;
+  padding: 2rem 0;
+}
+
+#information .right-column .right-column-item {
+  display: flex;
+  align-items: center;
+  margin: 0 auto 0.5rem;
+}
+
+#information .right-column .right-column-item .image-container {
+  width: 35%;
+  padding: 1rem;
+}
+
+#information .right-column .right-column-item .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 65%;
+}
+
+.show {
+  display: none;
+}
+
+#information .right-column .right-column-item .content p {
+  padding: 0.5rem 0;
+}
+
+@media only screen and (max-width: 750px) {
+  #information .hide {
+    display: none;
+  }
+  #information .right-column {
+    width: 100%;
+    padding: 1rem 1rem 2rem 1rem;
+  }
+  #information .right-column .right-column-item {
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  #information .show {
+    display: block;
+  }
+  #information .right-column .right-column-item .image-container {
+    width: 100%;
+    padding: 0;
+    margin-top: 4rem;
+  }
+  #information .right-column .right-column-item .content {
+    width: 100%;
+    margin-top: 4rem;
+  }
+  #information .grey {
+    background-color: white;
+  }
+}
+
+
+/* Learning Styles */
+
+#learning {
+  width: 100%;
+  background-color: #E9EAEB;
+}
+
+#learning h1 {
+  text-align: center;
+  padding-top: 2rem;
+}
+
+#learning .course {
+  background-color: white;
+}
+
+#learning .container {
+  display: flex;
+  width: 1200px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+#learning .container .courses-container {
+  padding: 2rem 4.5rem;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+#learning .course-container-mobile {
+  display: none;
+}
+
+#learning .row {
+  display: flex;
+  flex-direction: row;
+}
+
+.middle-course {
+  margin: 0 2rem;
+}
+
+#learning .course .content {
+  padding: 1.5rem 1rem;
+}
+
+#learning .course h3 {
+  font-size: 1.2rem;
+}
+
+#learning .course p {
+  font-size: 0.75rem;
+  font-weight: 100;
+  color: #9b9b9b;
+  padding: 0.5rem 0;
+}
+
+#row2 {
+  padding-top: 2rem;
+}
+
+@media only screen and (max-width: 750px) {
+  #learning {
+    background-color: white;
+  }
+  #learning h1 {
+    text-align: center;
+    padding: 2rem 0 1.5rem;
+  }
+  #learning .container {
+    display: block;
+  }
+  #learning .container .courses-container {
+    display: none;
+  }
+  #learning .container .courses-container-mobile {
+    display: block;
+    padding: 1rem;
+  }
+  #learning .container .courses-container-mobile .course-mobile {
+    background-color: #d8d8d8;
+    padding: 1rem 1rem 1.5rem 1rem;
+    margin-bottom: 0.5rem;
+  }
+  #learning h3 {
+    font-weight: 300;
+  }
+}
+
+
+/* Thesis Styles */
+
+#thesis {
+  width: 100%;
+}
+
+#thesis h1 {
+  text-align: center;
+  padding-top: 2rem;
+}
+
+#thesis .container {
+  display: flex;
+  width: 1200px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+#thesis .left-column {
+  width: 60%;
+  padding: 2rem 1.5rem
+}
+
+#thesis .video-container {
+  width: 100%;
+}
+
+#thesis .left-column .content {
+  padding-top: 2rem;
+}
+
+#thesis .left-column .content p {
+  padding: 1.5rem 0;
+  font-size: .9rem;
+}
+
+#thesis .right-column {
+  width: 40%;
+  padding: 2rem 0;
+}
+
+#thesis .right-column .right-column-item {
+  display: flex;
+  align-items: center;
+  margin: 0 auto 0.5rem;
+}
+
+#thesis .right-column .right-column-item .image-container {
+  width: 35%;
+  padding: 1rem;
+}
+
+#thesis .right-column .right-column-item .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 65%;
+}
+
+#thesis .right-column .right-column-item .content p {
+  padding: 0.5rem 0;
+}
+
+@media only screen and (max-width: 750px) {
+  #thesis .hide {
+    display: none;
+  }
+  #thesis .left-column {
+    width: 100%;
+    padding: 1rem 0 2rem 0;
+  }
+  #thesis .grey {
+    background-color: white;
+  }
+}
+
+
+/* Footer Styles */
+
+footer {
+  border-top: 1px solid #d8d8d8;
+  color: #9B9B9B;
+  font-family: 'Open Sans', sans-serif;
+}
+
+footer .content {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+}
+
+footer p {
+  font-size: 0.75rem;
+}
+
+footer ul {
+  display: flex;
+  flex-direction: row;
+}
+
+footer ul li {
+  margin: 0 1rem;
+}
