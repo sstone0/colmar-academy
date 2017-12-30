@@ -5,10 +5,10 @@ $(document).ready(function() {
 		if (windowWidth > 750) {
 			$('#banner').animate({
 				'opacity': '1'
-			}, 500);
+			}, 600);
 		}
 	};
-  
+
 	autoFade();
 
 
@@ -17,14 +17,14 @@ $(document).ready(function() {
 
 		/* Check the location of each desired element */
 		$('.hidden').each(function(i) {
-			var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+			var top_of_object = $(this).offset().top;
 			var bottom_of_window = $(window).scrollTop() + $(window).height();
 
 			/* If the object is completely visible in the window, fade it it */
-			if (bottom_of_window > bottom_of_object) {
-				$(this).animate({
+			if (bottom_of_window > top_of_object) {
+				$(this).delay(800).animate({
 					'opacity': '1'
-				}, 500);
+				}, 600);
 			}
 		});
 	});
