@@ -4,6 +4,13 @@ html {
   font-size: 16px;
 }
 
+.container {
+  display: flex;
+  width: 1400px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
 .grey {
   background-color: #D8D8D8;
 }
@@ -31,6 +38,10 @@ h3 {
 
 p {
   font-size: 1rem;
+}
+
+.hidden {
+  opacity: 0;
 }
 
 @media only screen and (max-width: 999px) {
@@ -91,7 +102,6 @@ p {
 .video-container video {
   width: 100%;
 }
-
 
 /* Header Styles */
 
@@ -176,15 +186,7 @@ a {
   }
 }
 
-
 /* Banner Styles */
-
-#banner .container {
-  display: flex;
-  width: 1200px;
-  max-width: 100%;
-  margin: 0 auto;
-}
 
 #banner .image-container {
   width: 60%;
@@ -215,6 +217,12 @@ a {
   max-width: 100%;
   padding: 0.5rem 0;
   font-size: .75rem;
+  transition: all .2s ease-in-out;
+}
+
+#banner .content button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 10px #888;
 }
 
 @media only screen and (max-width: 750px) {
@@ -237,18 +245,10 @@ a {
   }
 }
 
-
 /* Information Styles */
 
 #information {
   width: 100%;
-}
-
-#information .container {
-  display: flex;
-  width: 1200px;
-  max-width: 100%;
-  margin: 0 auto;
 }
 
 #information .left-column {
@@ -333,7 +333,6 @@ a {
   }
 }
 
-
 /* Learning Styles */
 
 #learning {
@@ -348,13 +347,12 @@ a {
 
 #learning .course {
   background-color: white;
+  transition: all .2s ease-in-out;
 }
 
-#learning .container {
-  display: flex;
-  width: 1200px;
-  max-width: 100%;
-  margin: 0 auto;
+#learning .course:hover {
+  box-shadow: 0 5px 10px 2px #888888;
+  transform: scale(1.1);
 }
 
 #learning .container .courses-container {
@@ -425,7 +423,6 @@ a {
   }
 }
 
-
 /* Thesis Styles */
 
 #thesis {
@@ -435,13 +432,6 @@ a {
 #thesis h1 {
   text-align: center;
   padding-top: 2rem;
-}
-
-#thesis .container {
-  display: flex;
-  width: 1200px;
-  max-width: 100%;
-  margin: 0 auto;
 }
 
 #thesis .left-column {
@@ -501,7 +491,6 @@ a {
     background-color: white;
   }
 }
-
 
 /* Footer Styles */
 
