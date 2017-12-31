@@ -11,7 +11,7 @@ html {
 
 .bounceUp {
   opacity: 1;
-  transition: all .9s ease-in-out .2s;
+  transition: all 1s ease-in-out .2s;
   margin-top: 0;
 }
 
