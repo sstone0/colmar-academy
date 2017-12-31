@@ -4,6 +4,17 @@ html {
   font-size: 16px;
 }
 
+.hidden {
+  opacity: 0;
+  margin-top: 40px;
+}
+
+.bounceUp {
+  opacity: 1;
+  transition: all .9s ease-in-out .2s;
+  margin-top: 0;
+}
+
 .container {
   display: flex;
   width: 1400px;
@@ -38,10 +49,6 @@ h3 {
 
 p {
   font-size: 1rem;
-}
-
-.hidden {
-  opacity: 0;
 }
 
 @media only screen and (max-width: 999px) {

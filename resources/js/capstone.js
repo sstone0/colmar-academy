@@ -1,35 +1,33 @@
 $(document).ready(function() {
 
-	function autoFade() {
-		let windowWidth = document.body.clientWidth;
-		if (windowWidth > 750) {
-			$('#banner').animate({
-				'opacity': '1'
-			}, 600);
-		}
-	};
+	//Cache reference to window and animation items (hidden)
+	var $hidden = $('.hidden');
+	var $window = $(window);
 
-	autoFade();
+	//measurements of window dimensions
+	function check_if_in_view() {
+		var window_height = $window.height();
+		var window_top_position = $window.scrollTop();
+		var window_bottom_position = (window_top_position + window_height);
 
+		$.each($hidden, function() {
+			var $element = $(this);
+			var element_height = $element.outerHeight();
+			var element_top_position = $element.offset().top;
+			var element_bottom_position = (element_top_position + element_height);
 
-	/* Every time the window is scrolled ... */
-	$(window).scroll(function() {
-
-		/* Check the location of each desired element */
-		$('.hidden').each(function(i) {
-			var top_of_object = $(this).offset().top;
-			var bottom_of_window = $(window).scrollTop() + $(window).height();
-
-			/* If the object is completely visible in the window, fade it it */
-			if (bottom_of_window > top_of_object) {
-				$(this).delay(800).animate({
-					'opacity': '1'
-				}, 600);
+			//check to see if this current container is within viewport
+			if ((element_bottom_position >= window_top_position) &&
+				(element_top_position <= window_bottom_position)) {
+				$element.addClass('bounceUp');
 			}
 		});
-	});
+	}
+	$window.on('scroll resize', check_if_in_view);
+	$window.trigger('scroll');
 
-	function width() {
+	//removes hidden class for mobile screens
+	function noFade() {
 		let windowWidth = document.body.clientWidth;
 		let banner = document.getElementById('banner').classList;
 		let information = document.getElementById('information').classList;
@@ -43,7 +41,6 @@ $(document).ready(function() {
 			thesis.remove("hidden");
 		}
 	};
-
-	width();
+	noFade();
 
 });
