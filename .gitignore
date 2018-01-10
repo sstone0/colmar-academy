@@ -1,2 +1,10 @@
-/videos
+
 .DS_Store
+
+/node_modules
+
+/media
+
+gulpfile.js
+
+.gitignore

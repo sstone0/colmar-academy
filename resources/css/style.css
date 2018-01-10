@@ -9,11 +9,17 @@ html {
   margin-top: 40px;
 }
 
+.show {
+  display: none;
+}
+
 .bounceUp {
   opacity: 1;
-  transition: all 1s ease-in-out .2s;
+  transition: all 1.3s ease-in-out .2s;
   margin-top: 0;
 }
+
+/*/////// content container ///////*/
 
 .container {
   display: flex;
@@ -110,11 +116,16 @@ p {
   width: 100%;
 }
 
-/* Header Styles */
+/*///////// Header Styles /////////*/
 
-header {
+#top {
   width: 100%;
   height: 4rem;
+  position: fixed;
+  background-color: white;
+  top: 0;
+  z-index: 100;
+  transition: 0.3s ease-out;
 }
 
 header .content {
@@ -134,9 +145,11 @@ header .content .logo-title {
   font-weight: 500;
 }
 
-header .content .logo-title span {
-  color: #9B9B9B;
+/*/////// span in header title ///////*/
+
+#headSpan {
   font-weight: 300;
+  transition: 0.3s ease-out;
 }
 
 header nav ul {
@@ -157,6 +170,7 @@ a {
   color: #4A4A4A;
   font-weight: 300;
   font-size: 1rem;
+  transition: 0.3s ease-out;
 }
 
 @media only screen and (max-width: 999px) {
@@ -193,7 +207,11 @@ a {
   }
 }
 
-/* Banner Styles */
+/*///////// Banner Styles /////////*/
+
+#banner {
+  margin-top: 4rem;
+}
 
 #banner .image-container {
   width: 60%;
@@ -220,16 +238,18 @@ a {
 #banner .content button {
   color: white;
   background-color: #4a4a4a;
+  border-radius: .5rem;
   width: 20rem;
   max-width: 100%;
   padding: 0.5rem 0;
   font-size: .75rem;
-  transition: all .2s ease-in-out;
+  transition: all .3s ease-in-out;
 }
 
 #banner .content button:hover {
   transform: scale(1.05);
   box-shadow: 0 5px 10px #888;
+  border-radius: 1rem;
 }
 
 @media only screen and (max-width: 750px) {
@@ -252,7 +272,7 @@ a {
   }
 }
 
-/* Information Styles */
+/*////////// Information Styles //////////*/
 
 #information {
   width: 100%;
@@ -303,10 +323,6 @@ a {
   width: 65%;
 }
 
-.show {
-  display: none;
-}
-
 #information .right-column .right-column-item .content p {
   padding: 0.5rem 0;
 }
@@ -340,7 +356,7 @@ a {
   }
 }
 
-/* Learning Styles */
+/*///////////// Learning Styles /////////////*/
 
 #learning {
   width: 100%;
@@ -354,12 +370,12 @@ a {
 
 #learning .course {
   background-color: white;
-  transition: all .2s ease-in-out;
+  transition: all .3s ease-in-out;
 }
 
 #learning .course:hover {
   box-shadow: 0 5px 10px 2px #888888;
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 #learning .container .courses-container {
@@ -430,7 +446,7 @@ a {
   }
 }
 
-/* Thesis Styles */
+/*///////////// Thesis Styles /////////////*/
 
 #thesis {
   width: 100%;
@@ -499,7 +515,7 @@ a {
   }
 }
 
-/* Footer Styles */
+/*///////////// Footer Styles /////////////*/
 
 footer {
   border-top: 1px solid #d8d8d8;
