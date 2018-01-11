@@ -34,18 +34,19 @@ $(function() {
 		//////////changing color of header and nav//////////
 		$window.on('scroll', function changeHeaderColor() {
 			let top = $('#top');
+			let headContent = $('#headContent');
 			let headSpan = $('#headSpan');
-			let a = $('a')
+			let a = $('.headA');
 			let scrollTop = $window.scrollTop()
 
 			if (scrollTop >= 120) {
-				top.css({'background-color': '#4A4A4A', 'color': 'white'});
-				headSpan.css({'color' : 'white'});
-				a.css({'color' : 'white'});
+				top.addClass('scroll');
+				headContent.addClass('scroll');
+				a.addClass('scroll');
 			} else {
-				top.css({'background-color': 'white', 'color': 'black'});
-				headSpan.css({'color' : 'black'});
-				a.css({'color' : '#4A4A4A'});
+				top.removeClass('scroll');
+				headContent.removeClass('scroll');
+				a.removeClass('scroll');
 			}
 		});
 
