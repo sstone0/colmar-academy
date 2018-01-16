@@ -288,12 +288,12 @@ header nav ul li {
 #banner .content button {
   color: #edf8ff;
   background-color: #1689b9;
-  border-radius: .4rem;
+  border-radius: 2rem;
   width: 12rem;
   margin: 0 auto;
   max-width: 100%;
   padding: 1rem 0;
-  font-size: .75rem;
+  font-size: .8rem;
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
 }
@@ -303,7 +303,6 @@ header nav ul li {
   transform: scale(1.05);
   border-radius: 2rem;
   background-color: #0a507c;
-  font-size: .8rem;
 }
 
 @media only screen and (max-width: 750px) {
