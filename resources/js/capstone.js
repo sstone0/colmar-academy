@@ -8,7 +8,7 @@ $(function() {
 	if ($window.width() >= 750) {
 
 		///////measurements of window dimensions///////
-		const check_if_in_view =() => {
+		const check_if_in_view = () => {
 			let window_height = $window.height();
 			let window_top_position = $window.scrollTop();
 			let window_bottom_position = (window_top_position + window_height);
