@@ -1,12 +1,11 @@
 /* Universal Styles */
-
 html {
   font-size: 16px;
 }
 
 .hidden {
-  opacity: 0;
   margin-top: 40px;
+  opacity: 0;
 }
 
 .show {
@@ -14,13 +13,13 @@ html {
 }
 
 .bounceUp {
-  opacity: 1;
-  -webkit-transition: all 1.3s ease-in-out .2s;
-  transition: all 1.3s ease-in-out .2s;
   margin-top: 0;
+  -webkit-transition: all 1.3s ease-in-out 0.2s;
+  transition: all 1.3s ease-in-out 0.2s;
+  opacity: 1;
 }
-
-/*/////// content container ///////*/
+/*/
+////// content container ///////*/
 
 .container {
   display: -webkit-box;
@@ -37,70 +36,74 @@ html {
 
 h1 {
   font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
   font-size: 1.75rem;
+  font-weight: 700;
   color: #4a4a4a;
 }
 
 h2 {
-  font-size: 1.5rem;
   font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
   font-weight: 700;
-  color: #4A4A4A;
+  color: #4a4a4a;
 }
 
 h3 {
   font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
-  color: #4A4A4A;
   font-size: 1.25rem;
+  font-weight: 400;
+  color: #4a4a4a;
 }
 
 p {
   font-size: 1rem;
 }
-
 @media only screen and (max-width: 999px) {
   h1 {
     font-size: 1.5rem;
   }
+
   h2 {
     font-size: 1.25rem;
   }
+
   h3 {
     font-size: 1rem;
   }
+
   p {
-    font-size: .75rem;
+    font-size: 0.75rem;
     font-weight: 300;
   }
 }
-
 @media only screen and (max-width: 750px) {
   h1 {
-    font-weight: 700;
     font-size: 1.75rem;
+    font-weight: 700;
   }
+
   h2 {
     font-size: 1.5rem;
     font-weight: 700;
   }
+
   h3 {
-    font-weight: 700;
     font-size: 1.25rem;
+    font-weight: 700;
   }
+
   p {
     font-size: 1rem;
   }
 }
 
 .main-content {
-  position: relative;
-  width: 100%;
-  margin: 0 auto;
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
   line-height: 1.2;
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .image-container {
@@ -118,66 +121,66 @@ p {
 .video-container video {
   width: 100%;
 }
-
-/*///////// Header Styles /////////*/
+/*/
+//////// Header Styles /////////*/
 
 #top {
-  -webkit-transition: background-color 0.5s ease;
-  transition: background-color 0.5s ease;
-  background-color: white;
+  position: fixed;
+  z-index: 100;
+  top: 0;
   width: 100%;
   height: 4.6rem;
-  position: fixed;
-  top: 0;
-  z-index: 100;
+  -webkit-transition: background-color 0.5s ease;
   -webkit-transition: all 0.3s ease-out;
+  transition: background-color 0.5s ease;
   transition: all 0.3s ease-out;
+  background-color: white;
 }
 
 #top.scroll {
-  background-color: #0a507c;
   height: 4rem;
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
+  background-color: #0a507c;
 }
 
 #headContent {
-  height: 4.6rem;
-  padding: 0 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -ms-flex-align: center;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   max-width: 1400px;
+  height: 4.6rem;
   margin: 0 auto;
+  padding: 0 2rem;
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
 }
 
 #headContent.scroll {
-  padding: 0 1.5rem;
   max-width: 1600px;
   height: 4rem;
+  padding: 0 1.5rem;
   color: #edf8ff;
 }
 
 header .content .logo-title {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 500;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  font-family: 'Ubuntu', sans-serif;
-  font-weight: 500;
+  -ms-flex-align: center;
 }
-
-/*/////// span in header title ///////*/
+/*/
+////// span in header title ///////*/
 
 #headSpan {
   font-weight: 300;
@@ -199,58 +202,62 @@ header nav ul li {
 
 .headA {
   font-family: 'Montserrat', sans-serif;
-  text-decoration: none;
-  color: #000;
-  font-weight: 300;
   font-size: 1rem;
+  font-weight: 300;
   -webkit-transition: 0.3s ease-out;
   transition: 0.3s ease-out;
+  text-decoration: none;
+  color: #000;
 }
 
 .headA.scroll {
   color: #edf8ff;
 }
-
 @media only screen and (max-width: 999px) {
   header .content .logo-title p {
     font-size: 1rem;
     font-weight: 500;
   }
+
   header .content .logo-title span {
     font-weight: 300;
   }
+
   header .desktop ul li {
     font-size: 1rem;
   }
 }
-
 @media only screen and (max-width: 750px) {
   header .content .logo-title {
     display: none;
   }
+
   header .desktop {
     display: none;
   }
+
   header .mobile {
     display: block;
     width: 100%;
   }
+
   header .mobile ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -ms-flex-align: center;
     -ms-flex-pack: distribute;
     justify-content: space-around;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
   }
+
   header .mobile li {
     padding: 0;
   }
 }
-
-/*///////// Banner Styles /////////*/
+/*/
+//////// Banner Styles /////////*/
 
 #banner {
   margin-top: 4.6rem;
@@ -286,16 +293,16 @@ header nav ul li {
 }
 
 #banner .content button {
-  color: #edf8ff;
-  background-color: #1689b9;
-  border-radius: 2rem;
+  font-size: 0.8rem;
   width: 12rem;
-  margin: 0 auto;
   max-width: 100%;
+  margin: 0 auto;
   padding: 1rem 0;
-  font-size: .8rem;
-  -webkit-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  color: #edf8ff;
+  border-radius: 2rem;
+  background-color: #1689b9;
 }
 
 #banner .content button:hover {
@@ -304,7 +311,6 @@ header nav ul li {
   border-radius: 2rem;
   background-color: #0a507c;
 }
-
 @media only screen and (max-width: 750px) {
   #banner .container {
     -webkit-box-orient: vertical;
@@ -312,23 +318,27 @@ header nav ul li {
     -ms-flex-direction: column;
     flex-direction: column;
   }
+
   #banner .image-container {
     width: 100%;
     max-height: 25rem;
     padding: 0;
   }
+
   #banner .content {
     padding: 2rem 0 2rem 1rem;
   }
+
   #banner .content h1 {
     padding-bottom: 2rem;
   }
+
   #banner .content button {
     margin: 0 auto;
   }
 }
-
-/*////////// Information Styles //////////*/
+/*/
+///////// Information Styles //////////*/
 
 #information {
   width: 100%;
@@ -348,8 +358,8 @@ header nav ul li {
 }
 
 #information .left-column .content p {
+  font-size: 0.9rem;
   padding: 1.5rem 0;
-  font-size: .9rem;
 }
 
 #information .left-column .content span {
@@ -366,8 +376,8 @@ header nav ul li {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
+  -ms-flex-align: center;
   margin: 0 auto 0.5rem;
 }
 
@@ -393,15 +403,16 @@ header nav ul li {
 #information .right-column .right-column-item .content p {
   padding: 0.5rem 0;
 }
-
 @media only screen and (max-width: 750px) {
   #information .hide {
     display: none;
   }
+
   #information .right-column {
     width: 100%;
-    padding: 1rem 1rem 2rem 1rem;
+    padding: 1rem 1rem 2rem;
   }
+
   #information .right-column .right-column-item {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -409,24 +420,28 @@ header nav ul li {
     flex-direction: column;
     margin: 0 auto;
   }
+
   #information .show {
     display: block;
   }
+
   #information .right-column .right-column-item .image-container {
     width: 100%;
-    padding: 0;
     margin-top: 4rem;
+    padding: 0;
   }
+
   #information .right-column .right-column-item .content {
     width: 100%;
     margin-top: 4rem;
   }
+
   #information .grey {
-    background-color: #C5ECF9;
+    background-color: #c5ecf9;
   }
 }
-
-/*///////////// Learning Styles /////////////*/
+/*/
+//////////// Learning Styles /////////////*/
 
 #learning {
   width: 100%;
@@ -434,28 +449,25 @@ header nav ul li {
 }
 
 #learning h1 {
-  text-align: center;
   padding-top: 2rem;
+  text-align: center;
   color: #4a4a4a;
 }
 
 #learning .course {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   background-color: white;
-  -webkit-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
 }
 
 #learning .course:hover {
-  -webkit-box-shadow: 0 5px 10px 2px #888888;
-  box-shadow: 0 5px 10px 2px #888888;
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
+  -webkit-box-shadow: 0 5px 10px 2px #888;
+  box-shadow: 0 5px 10px 2px #888;
 }
 
 #learning .container .courses-container {
-  padding: 2rem 4.5rem;
-  width: 100%;
-  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -463,6 +475,9 @@ header nav ul li {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem 4.5rem;
 }
 
 #learning .course-container-mobile {
@@ -494,56 +509,61 @@ header nav ul li {
 #learning .course p {
   font-size: 0.75rem;
   font-weight: 100;
-  color: #9b9b9b;
   padding: 0.5rem 0;
+  color: #9b9b9b;
 }
 
 #row2 {
   padding-top: 2rem;
 }
-
 @media only screen and (max-width: 750px) {
   #learning {
     background-color: white;
   }
+
   #learning h1 {
-    text-align: center;
     padding: 2rem 0 1.5rem;
+    text-align: center;
   }
+
   #learning .container {
     display: block;
   }
+
   #learning .container .courses-container {
     display: none;
   }
+
   #learning .container .courses-container-mobile {
     display: block;
     padding: 1rem;
   }
+
   #learning .container .courses-container-mobile .course-mobile {
-    background-color: #d8d8d8;
-    padding: 1rem 1rem 1.5rem 1rem;
     margin-bottom: 0.5rem;
+    padding: 1rem 1rem 1.5rem;
+    background-color: #d8d8d8;
   }
+
   #learning h3 {
     font-weight: 300;
   }
 }
-
-/*///////////// Thesis Styles /////////////*/
+/*/
+//////////// Thesis Styles /////////////*/
 
 #thesis {
   width: 100%;
 }
 
 #thesis h1 {
-  text-align: center;
   padding-top: 2rem;
+  text-align: center;
 }
 
 #thesis .left-column {
   width: 60%;
-  padding: 2rem 1.5rem
+  padding: 2rem 1.5rem;
 }
 
 #thesis .video-container {
@@ -555,8 +575,8 @@ header nav ul li {
 }
 
 #thesis .left-column .content p {
+  font-size: 0.9rem;
   padding: 1.5rem 0;
-  font-size: .9rem;
 }
 
 #thesis .right-column {
@@ -569,8 +589,8 @@ header nav ul li {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
+  -ms-flex-align: center;
   margin: 0 auto 0.5rem;
 }
 
@@ -596,26 +616,27 @@ header nav ul li {
 #thesis .right-column .right-column-item .content p {
   padding: 0.5rem 0;
 }
-
 @media only screen and (max-width: 750px) {
   #thesis .hide {
     display: none;
   }
+
   #thesis .left-column {
     width: 100%;
-    padding: 1rem 0 2rem 0;
+    padding: 1rem 0 2rem;
   }
+
   #thesis .grey {
     background-color: white;
   }
 }
-
-/*///////////// Footer Styles /////////////*/
+/*/
+//////////// Footer Styles /////////////*/
 
 footer {
-  border-top: 1px solid #d8d8d8;
-  color: #fefefe;
   font-family: 'Open Sans', sans-serif;
+  color: #fefefe;
+  border-top: 1px solid #d8d8d8;
   background-color: #0a507c;
 }
 
@@ -623,15 +644,15 @@ footer .content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -ms-flex-align: center;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  padding: 0 1rem;
   max-width: 1600px;
   margin: 0 auto;
+  padding: 0 1rem;
 }
 
 footer a {
