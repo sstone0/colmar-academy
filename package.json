@@ -17,8 +17,8 @@
   },
   "homepage": "https://github.com/sstone0/colmar-academy#readme",
   "devDependencies": {
-    "browser-sync": "^2.23.5",
-    "gulp": "^3.9.1",
+    "browser-sync": "^2.24.4",
+    "gulp": "^4.0.0",
     "gulp-autoprefixer": "^4.1.0"
   }
 }
